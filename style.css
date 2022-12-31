@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Varela+Round&display=swap');
+
+/* font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Varela Round', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    /* background-image: url(sbgimage.jpg); */
+    background-color: aqua;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+
+.logo img {
+    border-radius: 50%;
+    width: 100px;
+    padding: 0 8px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 45px;
+    background-color: #fff;
+    color: rgb(10, 10, 11);
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+ min-height: 75vh;
+}
+
+.container h1{
+    padding-top: 20px;
+}
+
+.bottom{
+    position:sticky;
+    height: 100px;
+    background-color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#progressBar{
+    min-width: 80vw;
+}
