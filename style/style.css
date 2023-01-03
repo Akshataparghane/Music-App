@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Varela+Round&display=swap');
+
+/* font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Varela Round', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(images/backgroundimage.jpg);
+    /* background-color: aqua; */
+    background-position: center;
+    background-size: cover;
+}
+
+
+.logo img {
+    border-radius: 50%;
+    width: 100px;
+    padding: 0 8px;
+    position: cover;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 45px;
+    background-color: #fff;
+    color: rgb(10, 10, 11);
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    min-height: 75vh;
+    background-image: url(images/backimage.jpg);
+    height: 500px;
+    width: 70%;
+    padding: 0 100px;
+    background-size: cover;
+    display: flex;
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+    margin: 30px auto;
+}
+
+
+.bottom {
+    position: sticky;
+    height: 10px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 10px;
+    position: sticky;
+    
+}
+
+.icons i {
+    cursor: pointer;
+    padding: 0 30px;
+}
+
+.song-container {
+    width: 300px;
+    height: 450px;
+    position: relative;
+    background: #fff;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    color: black;
+    border-radius: 13px;
+}
+
+#progressBar {
+    /* margin-top: px; */
+    min-width: 15vw;
+    cursor: pointer;
+}
+
+.song-container h3 {
+    text-align: center;
+}
+
+.img-container  {
+    border-radius: 50%;
+    width: 170px;
+    margin-top: 30px;
+    margin-left: 70px;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgb(45, 45, 77);
+}
+
+.gif img  {
+    border-radius: 50%;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.gif {
+    height: 50px;
+    display: flex;
+    background: linear-gradient(to right, #e4d8dc, #82807b);
+    width: 280px;
+    color: black;
+    margin: 50px 10px;
+    border-radius: 30px;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: large;
+    font-weight: 200;
+}
+
+#time{
+    font-size: small;
+    font:bold;
+    margin-left: 10px;
+}
+
+.gif img {
+    width: 43px;
+    margin: 0 23px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in ;
+}
+
+.song-name{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.anime{
+    animation: rotateimage 7s linear infinite;
+}
+
+@keyframes rotateimage {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(320deg);}
+}

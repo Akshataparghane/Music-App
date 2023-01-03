@@ -5,26 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Magicsoul</title>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li class="logo"> <img src="looimage.jpg" alt="Magicsoul">Magic-Soul</li>
+            <li class="logo"> <img src="style/images/looimage.jpg" alt="Magicsoul">Magic-Soul</li>
             <li>Home</li>
             <li>About</li>
         </ul>
     </nav>
     <div class="container">
-        <h1>AlbumName</h1>
-        <div class="songList"></div>
-        <div class="songBanner"></div>
-    </div>
 
-    <div class="bottom">
-        <input type="range" name="range" id="progressBar" min="0" max="100">
+        <div class="song-container">
+            <h3 id="title">Song Name</h3>
+            <img class="img-container" src="style/images/songpimages.jpg" alt="" id="img">
+            <audio class="song" src="songs/pehlapehlapyarhain.mp3"></audio>
+            <div class="gif">
+                <img src="gifs/Gif1.gif" alt="" id="gifopacity"> <span id="artistname"> Artist name </span>
+                <span id="time">   05:15   </span>
+            </div>
+            <div class="bottom">
+                <input type="range" name="range" id="progressBar" min="0" value="0" max="100">
+                <div class="icons">
+                    <i class="fa fa-2x fa-step-backward" id="prev" title="Previous"></i>
+                    <i class="fa fa-2x fa-play-circle-o" id="playbutton" title="Play"></i>
+                    <i class="fa fa-2x fa-step-forward" id="next" title="Next"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="songBanner"></div>
     </div>
     <script src="https://kit.fontawesome.com/9b6760e5d2.js" crossorigin="anonymous"></script>
     <script src="src.js"></script>
